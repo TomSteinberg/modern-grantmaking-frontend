@@ -17,6 +17,13 @@
   }
 }
 
+.three-words  {
+  @media screen and (max-width: $large-screen) {
+    display: none;
+  }
+}
+
+
 .content {
   @media screen and (min-width: $large-screen) { 
     grid-column: 1/8;
