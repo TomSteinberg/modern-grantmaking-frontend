@@ -5,4 +5,3 @@ I've used Sass (https://sass-lang.com) for CSS compilation - but you don't have 
 If you are using Sass, the compilation command I've used is
 
 `sass --watch --style compressed sass:css`
-
