@@ -1,0 +1,409 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+article > * + *,
+.post-content > * + * {
+  margin-top: 1em; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+body {
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.33;
+  font-size: 1em; }
+  @media screen and (min-width: 40em) {
+    body {
+      font-size: 1.1875em; } }
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.15;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #E6312A; }
+
+.biggest-heading {
+  font-size: 3.052rem; }
+
+h1,
+.primary-heading {
+  font-size: 2.441rem; }
+
+h2, .secondary-heading {
+  font-size: 1.3rem; }
+
+h3, .tertiary-heading {
+  font-size: 1.2rem; }
+
+h4, .quarternary-heading {
+  font-size: 1.125rem; }
+
+h5, .quinternary-heading {
+  font-size: 1rem; }
+
+p {
+  margin-bottom: 0.684210526em; }
+
+.lede {
+  font-size: 1.153846154em;
+  line-height: 1.4; }
+
+@media screen and (min-width: 56em) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); } }
+
+@media screen and (min-width: 56em) {
+  .modern-grid {
+    grid-column: 5/8; } }
+
+@media screen and (min-width: 56em) {
+  .header-content {
+    grid-column: 8/13; } }
+
+@media screen and (min-width: 56em) {
+  .content {
+    grid-column: 1/8; } }
+
+@media screen and (min-width: 56em) {
+  .authors {
+    grid-column: 8/13; } }
+
+@media screen and (min-width: 56em) {
+  .email-signup,
+  .questions,
+  .home-quote,
+  .agenda {
+    grid-column: 1/13; } }
+
+@media screen and (min-width: 56em) {
+  hr {
+    grid-column: 1/12; } }
+
+.hr-one {
+  position: relative;
+  left: -4em;
+  width: calc(100% + 4em); }
+
+.hr-two {
+  position: relative;
+  right: -2rem;
+  width: calc(100% + 4rem); }
+  @media screen and (min-width: 56em) {
+    .hr-two {
+      right: -4rem; } }
+
+.hr-three {
+  position: relative;
+  left: 0; }
+
+@media screen and (min-width: 56em) {
+  .email-signup {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); } }
+
+@media screen and (min-width: 56em) {
+  .email-intro {
+    grid-column: 1/5; } }
+
+@media screen and (min-width: 56em) {
+  .email-form {
+    grid-column: 6/13; } }
+
+@media screen and (min-width: 40em) {
+  .two-cols {
+    column-count: 2;
+    column-gap: 7em; }
+    .two-cols p {
+      break-inside: avoid-column; } }
+
+body {
+  color: #0E3033;
+  background-color: #f4f4f4; }
+
+.site {
+  margin: 0 auto;
+  max-width: 62em;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden; }
+
+a {
+  color: #3497A4;
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-thickness: .1em;
+  text-underline-offset: 2px; }
+  a:hover {
+    color: #21757F; }
+  a:visited {
+    color: #0E3033; }
+    a:visited:hover {
+      color: #3497A4; }
+
+hr {
+  border: 0;
+  outline: 0;
+  display: block;
+  height: 6px;
+  border-bottom: 2px solid #E6312A;
+  border-top: 6px solid #E6312A;
+  padding-top: 6px;
+  color: transparent;
+  margin: 0 -3px; }
+
+header {
+  text-align: right; }
+
+.site-title, .modern-title {
+  margin: 0.3em 0 0.2em 0;
+  font-size: 3em; }
+  .site-title i, .modern-title i {
+    font-weight: normal;
+    font-style: normal; }
+
+.modern-title {
+  color: #E6312A;
+  padding-top: 1.15em;
+  margin-right: 0.2em;
+  display: none;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  @media screen and (min-width: 56em) {
+    .modern-title {
+      display: block; } }
+
+@media screen and (min-width: 56em) {
+  .hidden {
+    -webkit-clip-path: inset(50%);
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; } }
+
+.subtitle {
+  color: #E6312A;
+  font-size: 1.2em; }
+
+.coming {
+  background-color: #E6312A;
+  background-image: url("../img/book.png");
+  background-image: url("../img/book.svg");
+  background-repeat: no-repeat;
+  background-position: 0.3em 50%;
+  background-size: 60px 52px;
+  color: #fff;
+  width: 14em;
+  padding: 0.5em 1em 0.5em 75px;
+  text-align: left; }
+  @media screen and (min-width: 56em) {
+    .coming {
+      position: absolute;
+      left: 0;
+      top: 1.5em; } }
+  .coming i {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5em; }
+
+.three-words {
+  font-weight: bold;
+  color: #E6312A; }
+  .three-words i {
+    font-style: normal;
+    margin-left: 2em;
+    font-size: 1.3em; }
+    .three-words i:first-of-type {
+      margin-left: 0; }
+
+.header-content {
+  padding-right: 2em; }
+  @media screen and (min-width: 56em) {
+    .header-content {
+      background-color: #F8DFDB;
+      padding-right: 4em;
+      padding-top: 2em; } }
+
+main .lede {
+  margin: 2em 0; }
+main hr + p {
+  margin-top: 2em; }
+
+.content {
+  padding: 2em; }
+  @media screen and (min-width: 56em) {
+    .content {
+      padding: 2em 4em; } }
+
+.authors {
+  background-color: #F8DFDB;
+  padding: 2em; }
+  @media screen and (min-width: 56em) {
+    .authors {
+      padding: 2em 4em 2em 2em; } }
+
+.author {
+  margin-top: 2em; }
+  .author img {
+    float: left;
+    margin-bottom: 1em; }
+  .author > p {
+    clear: both;
+    font-size: 0.875em; }
+
+.author-name {
+  color: #0E3033;
+  margin-bottom: 0.35em; }
+
+.author-details {
+  margin-left: 125px; }
+  .author-details a {
+    margin-right: 1em; }
+
+.email-signup {
+  background-color: #3497A4;
+  color: #fff;
+  padding: 2em 0 0; }
+  @media screen and (min-width: 56em) {
+    .email-signup {
+      padding: 0; } }
+  .email-signup a {
+    color: #fff; }
+
+.email-intro {
+  font-size: 0.875em;
+  padding: 0 2em 2em; }
+  @media screen and (min-width: 56em) {
+    .email-intro {
+      padding: 3em 0 2em 4em; } }
+
+.email-form {
+  padding: 2em;
+  background-color: #21757F; }
+  .email-form label {
+    display: block;
+    color: #fff;
+    font-size: 1.384615385em;
+    font-weight: bold;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin-bottom: 0.35em; }
+  .email-form input[type="submit"] {
+    background-color: #E6312A;
+    color: #fff;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    border: 0;
+    line-height: 2em;
+    cursor: pointer;
+    height: 3em;
+    padding: 0 1.4em; }
+  .email-form input[type="email"] {
+    border: 2px solid #0E3033;
+    height: 3em;
+    width: 20em;
+    padding: 0 0.5em;
+    margin-bottom: 1em; }
+
+.privacy-link {
+  font-size: 0.725em;
+  margin-top: 0.35em; }
+
+.questions {
+  padding: 2em;
+  background-image: url("../img/globes.png");
+  background-image: url("../img/globes.svg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center 100px; }
+  @media screen and (min-width: 56em) {
+    .questions {
+      padding: 6em 4em 4em; } }
+  .questions p {
+    font-size: 1.384615385em;
+    margin-bottom: 1.5em; }
+
+.home-quote {
+  padding: 0 2rem;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 2em; }
+  @media screen and (min-width: 56em) {
+    .home-quote {
+      padding: 2rem 4rem; } }
+
+.agenda {
+  padding: 0 2em;
+  margin-bottom: 2em; }
+  @media screen and (min-width: 56em) {
+    .agenda {
+      padding: 0 4em 2em; } }
+  .agenda h2 {
+    font-size: 1.615384615em;
+    margin-bottom: 1.5em; }
+
+footer {
+  padding: 2em; }
+  @media screen and (min-width: 56em) {
+    footer {
+      padding: 2em 4em; } }
+  footer h2 {
+    font-size: 1em;
+    color: #0E3033;
+    margin-bottom: 0.5em; }
+  footer p {
+    font-size: 0.875em; }
+
+/*# sourceMappingURL=global.css.map */

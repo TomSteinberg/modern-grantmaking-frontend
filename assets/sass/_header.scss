@@ -1,0 +1,94 @@
+header {
+  text-align: right;
+}
+
+.site-title {
+  margin: 0.3em 0 0.2em 0;
+  font-size: 3em;
+
+  i {
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+.modern-title {
+  @extend .site-title;
+  color: $red;
+  padding-top: 1.15em;
+  margin-right: 0.2em;
+  display: none;
+  font-family: $monsterrat;
+  @media screen and (min-width: $large-screen) { 
+    display: block;
+  }
+
+}
+
+.hidden {
+  @media screen and (min-width: $large-screen) { 
+    -webkit-clip-path: inset(50%);
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+
+.subtitle {
+  color: $red;
+  font-size: 1.2em;
+}
+
+.coming {
+  background-color: $red;
+  background-image: url('../img/book.png');
+  background-image: url('../img/book.svg');
+  background-repeat: no-repeat;
+  background-position: 0.3em 50%;
+  background-size: 60px 52px;
+  color: #fff;
+  width: 14em;
+  padding: 0.5em 1em 0.5em 75px;
+  text-align: left;
+  @media screen and (min-width: $large-screen) { 
+    position: absolute;
+    left: 0;
+    top: 1.5em;  
+  }
+  i {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5em;
+  }
+}
+
+.three-words {
+  font-weight: bold;
+  color: $red;
+  i {
+    font-style: normal;
+    margin-left: 2em;
+    font-size: 1.3em;
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
+
+.header-content {
+  padding-right: 2em;
+  @media screen and (min-width: $large-screen) { 
+    background-color: $pink;
+    padding-right: 4em;
+    padding-top: 2em;
+  }
+
+}

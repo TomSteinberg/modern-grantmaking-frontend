@@ -1,0 +1,97 @@
+.grid {
+  @media screen and (min-width: $large-screen) {
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.modern-grid {
+  @media screen and (min-width: $large-screen) { 
+    grid-column: 5/8; 
+  }
+}
+
+.header-content  {
+  @media screen and (min-width: $large-screen) { 
+    grid-column: 8/13; 
+  }
+}
+
+.content {
+  @media screen and (min-width: $large-screen) { 
+    grid-column: 1/8;
+  }
+}
+
+.authors {
+  @media screen and (min-width: $large-screen) { 
+    grid-column: 8/13;
+  }
+}
+
+.email-signup,
+.questions,
+.home-quote,
+.agenda {
+  @media screen and (min-width: $large-screen) { 
+    grid-column: 1/13;
+  }
+}
+
+hr {
+  @media screen and (min-width: $large-screen) { 
+    grid-column: 1/12;
+  }
+}
+
+
+.hr-one {
+ position: relative;
+ left: -4em;
+ width: calc(100% + 4em);
+ @media screen and (min-width: $large-screen) { 
+ }
+}
+
+.hr-two {
+  position: relative;
+  right: -2rem; //using rems here because we've adjusted the font size in the container
+  width: calc(100% + 4rem);
+  @media screen and (min-width: $large-screen) { 
+    right: -4rem;
+  }
+}
+
+.hr-three {
+  position: relative;
+  left: 0;
+}
+
+.email-signup {
+  @media screen and (min-width: $large-screen) { 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.email-intro  {
+  @media screen and (min-width: $large-screen) { 
+    grid-column: 1/5;
+  }
+}
+
+.email-form {
+  @media screen and (min-width: $large-screen) { 
+    grid-column: 6/13;
+  }
+}
+
+.two-cols {
+  @media screen and (min-width: $medium-screen) { 
+    column-count: 2;
+    column-gap: 7em;
+    p {
+      break-inside: avoid-column;
+    }
+  }
+}

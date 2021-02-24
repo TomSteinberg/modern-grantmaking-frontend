@@ -1,0 +1,41 @@
+body {
+  font-family: $work-sans;
+  line-height: 1.33;
+  font-size: 1em;
+  @media screen and (min-width: $medium-screen) { 
+    font-size: 1.1875em;
+  }
+  
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.15;
+  font-family: $monsterrat;
+  color: $red;
+}
+
+.biggest-heading {
+  font-size: 3.052rem;
+}
+
+h1,
+.primary-heading {
+  font-size: 2.441rem;
+}
+
+h2, .secondary-heading {font-size: 1.3rem;}
+
+h3, .tertiary-heading {font-size: 1.2rem;}
+
+h4, .quarternary-heading {font-size: 1.125rem;}
+
+h5, .quinternary-heading {font-size: 1rem;}
+
+p {
+  margin-bottom: 0.684210526em;
+}
+
+.lede {
+  font-size: 1.153846154em;
+  line-height: 1.4;
+}

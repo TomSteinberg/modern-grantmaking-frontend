@@ -1,0 +1,88 @@
+$red: #E6312A;
+$pink: #F8DFDB;
+$blue: #3497A4;
+$dark-blue: #21757F;
+$black: #0E3033;
+
+$smallest-screen: 16em;
+$small-screen: 20em;
+$medium-screen: 40em;
+$large-screen: 56em;
+
+$monsterrat: 'Montserrat',-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$work-sans: 'Work Sans',-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+
+@import 'reset';
+@import 'typography';
+@import 'grid';
+
+body {
+  color: $black;
+  background-color: #f4f4f4;
+}
+
+.site {
+  margin: 0 auto;
+  max-width: 62em;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+a {
+  color: $blue;
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-thickness: .1em;
+  text-underline-offset: 2px;
+  &:hover {
+    color: $dark-blue;
+  }
+
+  &:active {
+
+  }
+
+  &:focus {
+
+  }
+
+  &:visited {
+    color: $black;
+    &:hover { 
+      color: $blue;
+    }
+  }
+}
+
+hr {
+  border: 0;
+  outline: 0;
+  display: block;
+  height: 6px;
+  border-bottom: 2px solid $red;
+  border-top: 6px solid $red;
+  padding-top: 6px;
+  color: transparent;
+  margin: 0 -3px; //shave off the bevels
+}
+
+@import 'header';
+@import 'home';
+
+footer {
+  padding: 2em;
+  @media screen and (min-width: $large-screen) { 
+    padding: 2em 4em;
+  }
+  
+  h2 {
+    font-size: 1em;
+    color: $black;
+    margin-bottom: 0.5em;
+  }
+  p {
+    font-size: 0.875em;
+  }
+}

@@ -1,0 +1,16 @@
+.work__list {
+  margin-top: 1em;
+  list-style: none outside none;
+  padding: 0;
+}
+
+.work__tags {
+  display: block;
+  color: #666;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: 0.833333333rem;
+  &::before {
+    content: '#';
+  }
+}

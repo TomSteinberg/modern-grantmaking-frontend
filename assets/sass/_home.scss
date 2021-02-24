@@ -1,0 +1,143 @@
+
+main {
+  .lede {
+    margin: 2em 0;  
+  }
+  hr + p {
+    margin-top: 2em;
+  }
+}
+
+.content  {
+  padding: 2em;
+  @media screen and (min-width: $large-screen) { 
+    padding: 2em 4em;
+  }
+}
+
+.authors {
+  background-color: $pink;
+  padding: 2em; 
+  @media screen and (min-width: $large-screen) { 
+    padding: 2em 4em 2em 2em;
+  }
+}
+
+.author {
+  margin-top: 2em;
+  img {
+    float: left;
+    margin-bottom: 1em;
+  }
+  > p {
+    clear: both;
+    font-size: 0.875em;
+  }
+}
+
+.author-name {
+  color: $black;
+  margin-bottom: 0.35em;
+}
+
+.author-details {
+  margin-left: 125px;
+  a {
+    margin-right: 1em;
+  }
+}
+
+.email-signup {
+  background-color: $blue;
+  color: #fff;
+  padding: 2em 0 0;
+  
+  @media screen and (min-width: $large-screen) { 
+    padding: 0;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+.email-intro {
+  font-size: 0.875em;
+  padding: 0 2em 2em;
+  @media screen and (min-width: $large-screen) { 
+    padding: 3em 0 2em 4em;
+  }
+}
+
+.email-form {
+  padding: 2em;
+  background-color: $dark-blue;
+  label {
+    display: block;
+    color: #fff;
+    font-size: 1.384615385em;
+    font-weight: bold;
+    font-family: $monsterrat;
+    margin-bottom: 0.35em;
+  }
+  input[type="submit"] {
+    background-color: $red;
+    color: #fff;
+    font-family: $work-sans;
+    border: 0;
+    line-height: 2em;
+    cursor: pointer;
+    height: 3em;
+    padding: 0 1.4em;
+  }
+  input[type="email"] {
+    border: 2px solid $black;
+    height: 3em;
+    width: 20em;
+    padding: 0 0.5em;
+    margin-bottom: 1em;
+  }
+}
+
+.privacy-link {
+  font-size: 0.725em;
+  margin-top: 0.35em;
+}
+
+.questions {
+  padding: 2em;
+  @media screen and (min-width: $large-screen) { 
+    padding: 6em 4em 4em;
+  }
+  background-image: url('../img/globes.png');
+  background-image: url('../img/globes.svg');
+  background-repeat: none;
+  background-size: cover;
+  background-position: center 100px;
+  p {
+    font-size: 1.384615385em;
+    margin-bottom: 1.5em;
+  }
+}
+
+.home-quote {
+  padding: 0 2rem;
+  @media screen and (min-width: $large-screen) { 
+    padding: 2rem 4rem;
+  }
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
+.agenda {
+  padding: 0 2em;
+  @media screen and (min-width: $large-screen) { 
+    padding: 0 4em 2em;
+  }
+  margin-bottom: 2em;
+  h2 {
+    font-size: 1.615384615em;
+    margin-bottom: 1.5em;
+  }
+}
