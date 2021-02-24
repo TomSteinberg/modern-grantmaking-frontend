@@ -24,8 +24,20 @@
 }
 
 .authors {
+  display: none;
   @media screen and (min-width: $large-screen) { 
     grid-column: 8/13;
+    display: block;
+  }
+}
+
+.authors-responsive {
+  display: none;
+  @media screen and (max-width: $large-screen) {
+    display: block;
+  }
+  @media screen and (min-width: $large-screen) {
+    display: none;
   }
 }
 
