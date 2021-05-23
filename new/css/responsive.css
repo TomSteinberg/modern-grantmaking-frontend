@@ -32,6 +32,8 @@
     .banner-main-2 h1 br{
         display: none;
     }
+  
+  
 
 }
 
@@ -134,6 +136,7 @@
     .author{
         padding-bottom: 80px;
     }
+
 
    
     
@@ -391,6 +394,13 @@
 
     .banner-main-2 {
         padding-top: 120px;
+    }
+
+
+    .submenu{
+        left: 0px;
+        right: 0px;
+        margin: auto;
     }
   }
   

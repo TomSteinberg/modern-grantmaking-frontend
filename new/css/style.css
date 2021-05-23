@@ -346,13 +346,14 @@ a:hover, a:focus {
 ----------------------*/
 .main-navigation {
   padding: 10px 0px;
+  z-index: 9999!important;
 }
 
 .navbar-nav .nav-link {
   padding-right: 1rem !important;
   padding-left: 1rem !important;
   font-weight: 700;
-  color: #051441 !important;
+  color: #051441;
   text-transform: capitalize;
 }
 
@@ -372,31 +373,12 @@ a:hover, a:focus {
   background-size: 100% 100%;
 }
 
-.nav-item.dropdown .dropdown-menu {
-  transition: all 300ms ease;
-  display: block;
-  visibility: hidden;
-  opacity: 0;
-  top: 120%;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
-  border: 0px;
-  padding: 0px;
-  position: absolute;
-}
-
-.nav-item.dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  top: 100%;
-}
-
-
 .main-nav-3{
   background:#fff;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
 }
 .main-nav-3 .navbar-nav .nav-link:focus {
-  color: #F9C200 !important;
+  color: #F9C200;
 }
 
 
@@ -419,40 +401,42 @@ a:hover, a:focus {
 /*-------------------
   DROPDOWN MENU
 ----------------------*/
-.dropdown-menu {
+
+.navbar-nav li{
+  position: relative;
+}
+
+.submenu {
+  transition: all 300ms ease;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.05), -2px 0px 5px 1px rgba(0, 0, 0, 0.05);
+  border: 0px;
+  padding: 0px;
+  list-style: none;
+  background: #fff;
+  width: 220px;
+  position: absolute;
+  visibility: hidden; 
   opacity: 0;
+  top: 120%;
+  z-index: 99;
 }
 
-.dropdown-menu.show {
-  -webkit-animation: .2s forwards b;
-          animation: .2s forwards b;
+
+.nav-item:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
 }
 
-@-webkit-keyframes b {
-  to {
-    opacity: 1;
-  }
+.submenu li{
+  border-bottom: 1px solid #eee;
+}
+.submenu li a{
+  color: #222;
 }
 
-@keyframes b {
-  to {
-    opacity: 1;
-  }
-}
-
-.dropdown-item {
-  font-size: .6875rem;
-  font-weight: 500;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  transition: background-color .1s;
-  text-transform: uppercase;
-}
-
-.dropdown-item:hover {
-  color: #fff;
-  text-decoration: none;
-  background-color: #F9C200;
+.navbar-nav li:hover > a{
+  color: #F9C200;
 }
 
 .header-white {
@@ -474,10 +458,6 @@ a:hover, a:focus {
   padding: 7.5rem 0;
 }
 
-/* 
-Main Banner 3
-
-*/
 
 .subtitle{
   color: #4054B2;
