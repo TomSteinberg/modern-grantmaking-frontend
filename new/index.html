@@ -107,15 +107,19 @@
         }
     </style>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FNS6L0H0K2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
- 
-  gtag('config', 'G-FNS6L0H0K2');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNS6L0H0K2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied'
+      });
+      gtag('js', new Date());
+      gtag('config', 'G-FNS6L0H0K2', {
+           client_storage: 'none'
+      });
+    </script>
 
 </head>
 
