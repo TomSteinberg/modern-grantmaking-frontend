@@ -47,6 +47,64 @@
         .footer-widget ul li a, .footer-widget h5 {
             text-transform: none !important;
         }
+        ul.lead li {
+            list-style: square;
+        }
+        ul.lead li strong {
+            font-weight: bold;
+        }
+        .quote {
+            background-color: #4054B2;
+            min-height: 400px;
+            height: calc(100% + 133px);
+            overflow: auto;
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 50px;
+            text-align: center;
+        }
+        .quote p.lead {
+             color: rgba(255, 255, 255, 0.8);
+        }
+        .quote h5 {
+            color: gray;
+        }
+        /*.quote .carousel-caption p {
+            max-width: 400px;
+        }*/
+        .pricing-box {
+            padding: 50px;
+            background: #F4F5F8;
+            background: #07112d;
+        }
+        .pricing-header p {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0px;
+            color: #fff;
+        }
+        .pricing-header h2 {
+            font-size: 2em;
+            color: #fff;
+        }
+        .pricing-box ul {
+            margin-bottom: 30px;
+            border-top: 1px solid rgba(255,255,255,.2);
+            padding-top: 30px;
+            color: #fff;
+        }
+        .pricing-box ul li {
+            margin-bottom: 10px;
+        }
+        .bg-grey {
+            z-index: 0;
+        }
+        .about-img::before {
+          z-index: 1;
+        }
+        .about-img {
+          z-index: 2;
+        }
     </style>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -160,7 +218,7 @@
                     <!-- <p class="mb-3 mt-4">A Guide for Funders Who Believe Better is Possible</p> -->
 
                     <div class="btn-container">
-                        <a href="#book" class="btn btn-main"> Learn More</a>
+                        <a href="#about" class="btn btn-main"> Learn More</a>
                         <a href="#buy" class="btn btn-main-2 ml-0 ml-lg-2 ">Pre-order now</a>
                     </div>
                 </div>
@@ -189,7 +247,7 @@
 					<h2 class="text-lg mb-4">About Modern Grantmaking</h2>
 
                     <p class="lead">Our book is for anyone employed in the curious world of grantmaking, whether you work for a private foundation, a government funder, or a corporate donor.</p>
-                    <p class="lead">We're written a practical guide that grantmakers can turn to whenever they need support. To make it quick and easy to use, we’ve filled the book with answers to real-world grantmaking questions.</p>
+                    <p class="lead">We've written a practical guide that grantmakers can turn to whenever they need support. To make it quick and easy to use, we’ve filled the book with answers to real-world grantmaking questions.</p>
                     <p class="lead">But it’s about more than handy tips. Every grantmaker can be a reformer too - our book explains why this is so important and how you can get involved.</p>
                     <a href="#buy" class="btn btn-main mt-2">Pre-order now</a>
 				</div>
@@ -207,16 +265,7 @@
                  <p>We'll never share your email address with anyone.</p>
             </div>
 
-            <div class="col-lg-6"  id="mc_embed_signup">
-<!--                 <form action="#" class="subscribe-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Email">
-                    </div>
-                    <a href="#" class="btn btn-main-2">Subscribe</a>
-                </form> -->
+            <div class="col-lg-6" id="mc_embed_signup">
                 <form action="https://moderngrantmaking.us1.list-manage.com/subscribe/post?u=d6e0165109902a635d8e85f5a&amp;id=6d3e87837f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe-form" target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll">
                         <div class="mc-field-group">
@@ -255,7 +304,7 @@
             <div class="w-100"></div>
             <div class="col-2"></div>
             <div class="col-8">
-                <p class="chapter-contents">Who is this book for? · Aren’t funders too different for a single book to be useful to all grantmakers? · Who is this book not for? · Is it even moral to work for Big Philanthropy? · Why should I pay any attention to your advice on grantmaking? · How do I use this book to improve my grantmaking? · Will this book tell me what causes and organisations to give money to? · What is the structure of this book?</p>
+                <p class="chapter-contents">Who is this book for? · Is it even moral to work for Big Philanthropy? · Why should I pay any attention to your advice on grantmaking? · How do I use this book to improve my grantmaking? · Will this book tell me what causes and organisations to give money to? · What is the structure of this book?</p>
             </div>
             <div class="w-100"></div>
 
@@ -264,7 +313,7 @@
             <div class="w-100"></div>
             <div class="col-2"></div>
             <div class="col-8">
-                <p class="chapter-contents">What’s been brewing? · What are the weaknesses of traditional grantmaking? ·  Where does Modern Grantmaking come into this? · What are the values that underpin Modern Grantmaking? · How do I know if I’m living up to these values in my grantmaking? · An exercise on Modern Grantmaking values</p>
+                <p class="chapter-contents">What’s been brewing? · What are the weaknesses of traditional grantmaking? · What are the values that underpin Modern Grantmaking? · How do I know if I’m living up to these values in my grantmaking? · An exercise on Modern Grantmaking values</p>
             </div>
             <div class="w-100"></div>
 
@@ -273,7 +322,7 @@
             <div class="w-100"></div>
             <div class="col-2"></div>
             <div class="col-8">
-                <p class="chapter-contents">Make most of your grants unrestricted · Adopt a clear mission and make grants that support it · Make more long-term grants  · Don’t fund alone  · Invest to make applying for your money easy and accessible · Say ‘no’ clearly and quickly · Practise having conversations that are mutually beneficial  · If you don’t accept unsolicited proposals, explain how grantseekers can get noticed by you · Don’t bounce grantseekers into doing things that aren’t their priorities  · Pay grantees up front  ·  Don’t short-change your grantees  · Fund quickly · Take safeguarding seriously · Be transparent about what you do and don’t fund · Checklist</p>
+                <p class="chapter-contents">Make most of your grants unrestricted · Adopt a clear mission and make grants that support it · Make more long-term grants · Don’t fund alone  · Invest to make applying for your money easy and accessible · Say ‘no’ clearly and quickly · Don’t bounce grantseekers into doing things that aren’t their priorities · Don’t short-change your grantees · Take safeguarding seriously · Be transparent about what you do and don’t fund · Checklist</p>
             </div>
             <div class="w-100"></div>
 
@@ -283,7 +332,7 @@
             <div class="w-100"></div>
             <div class="col-2"></div>
             <div class="col-8">
-                <p class="chapter-contents">What are privilege and power, and why do they matter to a grantmaker? · Is privilege a widely accepted idea? · What is ‘unchecked privilege’? · Can privilege undermine good grantmaking decisions? ·Why haven’t funders tackled the problem of unchecked privilege and problematic power imbalances · But aren’t you, Gemma and Tom, both privileged? · What does it look like when funders actually check their privilege and power? · The story of the Disability Rights Fund · What specific steps can I take if I work for a traditional funder? · Can you give an example of how a funder tackles privilege and power inequalities in its grantmaking? · How can I tell if my funding organisation is really acting on privilege and power? · Checklist</p>
+                <p class="chapter-contents">What are privilege and power, and why do they matter to a grantmaker? · Can privilege undermine good grantmaking decisions? · Why haven’t funders tackled the problem of unchecked privilege and problematic power imbalances · What does it look like when funders actually check their privilege and power? · Can you give an example of how a funder tackles privilege and power inequalities in its grantmaking? · Checklist</p>
             </div>
             <div class="w-100"></div>
 
@@ -292,7 +341,7 @@
             <div class="w-100"></div>
             <div class="col-2"></div>
             <div class="col-8">
-                <p class="chapter-contents">What is a strategy and why would my organisation need one? · Can you show me an example of a strategy for a funder? · Do you have real examples of funders with clear strategies? · How do I help my funder come up with a good strategy? · When we’ve found the right people to lead our strategy development process, what should they do? · What substantial issues should we make sure our strategy addresses?  · How do we gather views on what should or shouldn’t be in our strategy? · How do we actually make use of the new strategy to change things? · Is this the only way of coming up with a useful strategy for my funding organisation? · Checklist</p>
+                <p class="chapter-contents">What is a strategy and why would my organisation need one? · Do you have real examples of funders with clear strategies? · How do I help my funder come up with a good strategy? · How do we gather views on what should or shouldn’t be in our strategy? · How do we actually make use of the new strategy to change things? · Is this the only way of coming up with a useful strategy for my funding organisation? · Checklist</p>
             </div>
             <div class="w-100"></div>
 
@@ -301,7 +350,7 @@
             <div class="w-100"></div>
             <div class="col-2"></div>
             <div class="col-8">
-                <p class="chapter-contents">Should we be open to unsolicited proposals or be an invite-only funder? · Should we fund riskier projects with potentially higher pay-offs or less risky projects with lower pay-offs? · Should we focus on preventing harm or on helping people who have been harmed? · Should we focus on helping in a specific place or on tackling a specific problem? · Who makes the final decision on who gets the money? · What is participatory grantmaking and why should I care about it? · Should we worry about the financial sustainability of the organisations we fund? ·How should we approach our own savings and investments? · How transparent and accountable should we be? · Should our funding organisation be permanent or should it spend down and close? · Checklist</p>
+                <p class="chapter-contents">Should we be open to unsolicited proposals or be an invite-only funder? · Should we fund riskier projects with potentially higher pay-offs or less risky projects with lower pay-offs? · Who makes the final decision on who gets the money? · Should we worry about the financial sustainability of the organisations we fund? · How should we approach our own savings and investments? · How transparent and accountable should we be? · Should our funding organisation be permanent or should it spend down and close? · Checklist</p>
             </div>
             <div class="w-100"></div>
 
@@ -310,7 +359,7 @@
             <div class="w-100"></div>
             <div class="col-2"></div>
             <div class="col-8">
-                <p class="chapter-contents">Why should we invest time and energy in offering grantseekers and grantees a good experience? · What causes bad applicant and grantee experiences? ·How can I improve my organisation’s user experience? · What is human-centred design?  · Case study: An example of design iteration in a large funder · What is user experience research? · Does the size of my funder change how we should use human-centred design? · How do I improve our service quality if I work for a small funder? · How do I improve our service quality if I work for a larger funder? · What are the barriers that prevent my funder offering grantseekers and grantees a great experience? · Checklist</p>
+                <p class="chapter-contents">What causes bad applicant and grantee experiences? · How can I improve my organisation’s user experience? · What is human-centred design? · How do I improve our service quality if I work for a small funder? · How do I improve our service quality if I work for a larger funder? · Checklist</p>
             </div>
             <div class="w-100"></div>
 
@@ -328,7 +377,7 @@
             <div class="w-100"></div>
             <div class="col-2"></div>
             <div class="col-8">
-                <p class="chapter-contents">What does a good manager look like in a funding organisation? · What are some good management no-brainers? · What are the traits of a bad leader or manager of grantmakers? · Are there specific mistakes I should try to avoid as a manager of other grantmakers? · How do I manage upwards to a board or a founding donor? · How do I go about hiring new grantmakers? · Checklist</p>
+                <p class="chapter-contents">What does a good manager look like in a funding organisation? · What are the traits of a bad leader or manager of grantmakers? · Are there specific mistakes I should try to avoid as a manager of other grantmakers? · How do I manage upwards to a board or a founding donor? · How do I go about hiring new grantmakers? · Checklist</p>
             </div>
             <div class="w-100"></div>
 
@@ -337,7 +386,7 @@
             <div class="w-100"></div>
             <div class="col-2"></div>
             <div class="col-8">
-                <p class="chapter-contents">Why is a lack of good incentives a problem for Modern Grantmakers · What is the most valuable thing I can do to keep getting better as a grantmaker? · Why should I bother with a personal development plan? · What activities will improve my skills as a grantmaker? ·What grantmaking courses and programmes do universities offer?  · Checklist</p>
+                <p class="chapter-contents">Why is a lack of good incentives a problem for Modern Grantmakers · What is the most valuable thing I can do to keep getting better as a grantmaker? · What activities will improve my skills as a grantmaker? · What grantmaking courses and programmes do universities offer? · Checklist</p>
             </div>
             <div class="w-100"></div>
 
@@ -350,52 +399,17 @@
             </div>
             <div class="w-100"></div>
 
+            <div class="col-12 mt-3 text-center">
+                <a href="#buy" class="btn btn-main mt-2">Pre-order now</a>
+            </div>
+
         </div>
     </div>
 </section>
 
-
-<!-- <section class="featured-client section-bottom">
+<div class="section reviews" id="testimonials">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="heading text-center">
-                    <span class="text-color">Featured topic</span>
-                    <h2>Featured by them. </h2>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="text-center border p-4">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <img src="images/about/award-1.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <img src="images/about/award-2.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <img src="images/about/award-3.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="col">
-                            <img src="images/about/award-4.png" alt="" class="img-fluid">
-                        </div>
-                         <div class="col">
-                            <img src="images/about/award-2.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
 
-
-
-<div class="section reviews" data-aos="fade-up" id="testimonials">
-    <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="heading text-center">
@@ -405,156 +419,75 @@
             </div>
         </div>
 
-
-        <div class="card-columns">
-
-          <div class="card">
-            <div class="card-body">
-              <p class="card-text" style="font-style: italic">&ldquo;What an absolute triumph of a book! I blew through it cover to cover, and enjoyed every moment. Reading it has given me the bandwidth I needed to unlock a way forward on a few things I have been grappling with at my foundation.&rdquo;</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center quote">
+                <p class="lead">
+                    &ldquo;What an absolute triumph of a book! I blew through it cover to cover, and enjoyed every moment. Reading it has given me the bandwidth I needed to unlock a way forward on a few things I have been grappling with at my foundation.&rdquo;
+                </p>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Sufina Ahmad MBE</h5>
+                    <p>Director, John Ellerman Foundation</p>
+                </div>
             </div>
-            <div class="card-footer" style="overflow: auto">
-                <img src="images/sufina-ahmad.jpeg" class="reviewer" />
-                <div class="reviewer-title">
-                  <h5>Sufina Ahmad MBE</h5>
-                  <p>Director, John Ellerman Foundation</p>
-              </div>
+            <div class="carousel-item text-center quote">
+                <p class="lead">
+                    &ldquo;This is the book I wish I had when I started grantmaking. When I first started I felt a bit lost at sea. Training provided was about the nuts and bolts of day to day work but didn't provide the context or critical analysis to help me explore the why or how of the work. This book provides a solid foundation to help make the sector better for grantmakers and grant seekers. It helps us to challenge ourselves and the way we do things so that we can best support the communities we aim to serve.&rdquo;
+                </p>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hannah Paterson</h5>
+                    <p>Senior Portfolio Manager, The National Lottery Community Fund</p>
+                </div>
             </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body">
-              <p class="card-text" style="font-style: italic">&ldquo;This is the book I wish I had when I started grantmaking. 
-When I first started I felt a bit lost at sea. Training provided was about the nuts and bolts of day to day work but didn't provide the context or critical analysis to help me explore the why or how of the work. This book provides a solid foundation to help make the sector better for grantmakers and grant seekers. It helps us to challenge ourselves and the way we do things so that we can best support the communities we aim to serve.&rdquo;</p>
-            </div>
-            <div class="card-footer">
-                                <img src="images/sufina-ahmad.jpeg" class="reviewer" />
-                <div class="reviewer-title">
-              <h5>Hannah Paterson</h5>
-              <p>Senior Portfolio Manager, The National Lottery Community Fund</p>
-          </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body" style="font-style: italic">
-              <p class="card-text">&ldquo;“Grantmaking as usual will not suffice if we want to build more thriving and just communities. In Modern Grantmaking, Gemma Bull and Tom Steinberg lay out a compelling case for change in grantmaking practices and provide a timely guide for how grantmakers can rethink their work.&rdquo;</p>
-            </div>
-            <div class="card-footer">
-                <img src="images/sufina-ahmad.jpeg" class="reviewer" />
-                <div class="reviewer-title">
+            <div class="carousel-item quote">
+                <p class="lead">
+                    &ldquo;Grantmaking as usual will not suffice if we want to build more thriving and just communities. In Modern Grantmaking, Gemma Bull and Tom Steinberg lay out a compelling case for change in grantmaking practices and provide a timely guide for how grantmakers can rethink their work.&rdquo;
+                </p>
+                <div class="carousel-caption d-none d-md-block">
                     <h5>Paul Waters</h5>
                     <p>Associate Director, Democracy Fund</p>
                 </div>
             </div>
-          </div>
-
-          <div class="card">
-            <div class="card-body" style="font-style: italic">
-              <p class="card-text">&ldquo;This work sheds new light not only on the imperative for philanthropic funders to change their practices, but on the ways in which they can do so. Written for practitioners, the book provides information and inspiration for better grant making.&rdquo;</p>
+            <div class="carousel-item quote">
+                <p class="lead">
+                    &ldquo;This work sheds new light not only on the imperative for philanthropic funders to change their practices, but on the ways in which they can do so. Written for practitioners, the book provides information and inspiration for better grant making.&rdquo;
+                </p>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ruth Levine</h5>
+                    <p>CEO, IDinsight and former Director, Global Development and Population Program, William and Flora Hewlett Foundation</p>
+                </div>
             </div>
-            <div class="card-footer">
-
-                <img src="images/sufina-ahmad.jpeg" class="reviewer" />
-                <div class="reviewer-title">
-              <h5>Ruth Levine</h5>
-              <p>CEO, IDinsight and former Director, Global Development and Population Program, William and Flora Hewlett Foundation</p>
-          </div>
+            <div class="carousel-item quote">
+                <p class="lead">
+                    &ldquo;I would strongly encourage everyone who works for a grant giver to read Modern Grantmaking - given that nobody is pushing you on the CPD front it's the least you could do. It is written by two people who deeply understand the way grantmaking is currently done and therefore the ways in which it is fundamentally flawed. I loved the way they combined humour with practical tips on how to become a Modern Grantmaker.&rdquo;
+                </p>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ciorsdan Brown</h5>
+                    <p>Head of Charitable Partnerships & Strategy, The Goldsmiths'​ Company</p>
+                </div>
             </div>
           </div>
-
-          <div class="card">
-            <div class="card-body" style="font-style: italic">
-              <p class="card-text">&ldquo;I would strongly encourage everyone who works for a grant giver to read Modern Grantmaking - given that nobody is pushing you on the CPD front it's the least you could do. It is written by two people who deeply understand the way grantmaking is currently done and therefore the ways in which it is fundamentally flawed. I loved the way they combined humour with practical tips on how to become a Modern Grantmaker.&rdquo;</p>
-            </div>
-            <div class="card-footer">
-            <img src="images/sufina-ahmad.jpeg" class="reviewer" />
-                <div class="reviewer-title">
-              <h5>Ciorsdan Brown</h5>
-              <p>Head of Charitable Partnerships & Strategy, The Goldsmiths'​ Company</p>
-          </div>
-            </div>
-
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-
-      </div>
-
     </div>
 </div>
 
-<!-- Testimonials-->
-<!-- <div class="section bg-grey reviews" data-aos="fade-up" id="testimonials" style="padding-bottom: 50px">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="heading text-center">
-                    <span class="text-color">Testimonials</span>
-                    <h2>What people are saying</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center text-center" data-aos="fade-up">
-            <div class="col-md-8">
-                <div class="owl-carousel home-slider-loop-false owl-theme">
-                    <div class="testimonial-item">
-                        <blockquote class="testimonial2">
-                            <p>&ldquo;What an absolute triumph of a book! I blew through it cover to cover, and enjoyed every moment. Reading it has given me the bandwidth I needed to unlock a way forward on a few things I have been grappling with at my foundation.&rdquo;</p>
-                            <div class="author mt-5">
-                                 <h4 class="mb-0">Sufina Ahmad MBE</h4>
-                                <p>Director, John Ellerman Foundation</p>
-                            </div>
-                        </blockquote>
-                    </div>
-                    <div class="testimonial-item">
-                        <blockquote class="testimonial2">
-                            <p>&ldquo;This is the book I wish I had when I started grantmaking. 
-When I first started I felt a bit lost at sea. Training provided was about the nuts and bolts of day to day work but didn't provide the context or critical analysis to help me explore the why or how of the work. This book provides a solid foundation to help make the sector better for grantmakers and grant seekers. It helps us to challenge ourselves and the way we do things so that we can best support the communities we aim to serve.&rdquo;</p>
-                            <div class="author mt-5">
-                                <img src="images/about/person_1.jpg" alt="Image placeholder" class="mb-4">
-                                <h4 class="mb-0">Hannah Paterson</h4>
-                                <p>Senior Portfolio Manager at The National Lottery Community Fund</p>
-                            </div>
-                        </blockquote>
-                    </div>
-                    <div class="testimonial-item">
-                        <blockquote class="testimonial2">
-                            <p>&ldquo;“Grantmaking as usual will not suffice if we want to build more thriving and just communities. In Modern Grantmaking, Gemma Bull and Tom Steinberg lay out a compelling case for change in grantmaking practices and provide a timely guide for how grantmakers can rethink their work.&rdquo;</p>
-                            <div class="author mt-5">
-                                <img src="images/about/person_2.jpg" alt="Image placeholder" class="mb-4">
-                                <h4 class="mb-0">Paul Waters</h4>
-                                <p>Associate Director, Democracy Fund</p>
-                            </div>
-                        </blockquote>
-                    </div>
-                    <div class="testimonial-item">
-                        <blockquote class="testimonial2">
-                            <p>&ldquo;This work sheds new light not only on the imperative for philanthropic funders to change their practices, but on the ways in which they can do so. Written for practitioners, the book provides information and inspiration for better grant making.&rdquo;</p>
-                            <div class="author mt-5">
-                                <img src="images/about/person_3.jpg" alt="Image placeholder" class="mb-4">
-                                <h4 class="mb-0">Ruth Levine</h4>
-                                <p>CEO, IDinsight and former Director, Global Development and Population Program, William and Flora Hewlett Foundation</p>
-                            </div>
-                        </blockquote>
-                    </div>
-                    <div class="testimonial-item">
-                        <blockquote class="testimonial2">
-                            <p>&ldquo;I would strongly encourage everyone who works for a grant giver to read Modern Grantmaking - given that nobody is pushing you on the CPD front it's the least you could do. It is written by two people who deeply understand the way grantmaking is currently done and therefore the ways in which it is fundamentally flawed. I loved the way they combined humour with practical tips on how to become a Modern Grantmaker.&rdquo;</p>
-                            <div class="author mt-5">
-                                <img src="images/about/person_2.jpg" alt="Image placeholder" class="mb-4">
-                                <h4 class="mb-0">Ciorsdan Brown</h4>
-                                <p>Head of Charitable Partnerships & Strategy at The Goldsmiths'​ Company</p>
-                            </div>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --> <!-- .section -->
-
-
 <!-- Authors -->
-<section class="author section bg-grey" id="author">
+<section class="section author bg-grey" id="author">
     <div class="container">
 
         <div class="row justify-content-center">
@@ -569,7 +502,7 @@ When I first started I felt a bit lost at sea. Training provided was about the n
 
             <div class="col-lg-3">
                 <div class="about-img">
-                    <img src="images/about/authorimg.jpg" alt="" class="img-fluid w-100">
+                    <img src="images/gemma-bull.jpg" alt="Gemma Bull portrait photo" class="img-fluid w-100">
                 </div>
             </div>
 
@@ -588,13 +521,13 @@ When I first started I felt a bit lost at sea. Training provided was about the n
                             </ul>
                         </div>
                     </div>
-                    <p class="mb-4">Gemma is a nonprofit leader who was previously Funding Strategy Director for the UK's largest community funder, responsible for awarding £600 million annually. Previously she was Managing Director for Innovation at Leonard Cheshire Disability and Head of Innovation at Save the Chidren. She now specialises in supporting organisations to innovate, improve and collaborate.</p>
+                    <p class="mb-4">Gemma was previously England Director and Funding Strategy Director for the UK's largest community funder, which awards £600 million annually.  Her responsibilities included building teams, leading hundreds of people and driving a major redesign of the whole organisation’s grantmaking. Previously she was Managing Director for Innovation and Enterprise at Leonard Cheshire Disability and Head of Innovation at Save the Chidren. She now specialises in supporting organisations to innovate, improve and collaborate.</p>
                 </div>
             </div>
 
             <div class="col-lg-3">
                 <div class="about-img">
-                    <img src="images/about/authorimg.jpg" alt="" class="img-fluid w-100">
+                    <img src="images/tom-steinberg.jpg" style="border: 1px solid #ccc" alt="Tom Steinberg portrait photo" class="img-fluid w-100">
                 </div>
             </div>
 
@@ -613,7 +546,7 @@ When I first started I felt a bit lost at sea. Training provided was about the n
                             </ul>
                         </div>
                     </div>
-                    <p class="mb-4">Tom is a nonprofit CEO and civic tech leader turned grantmaker. He founded civic tech pioneers mySociety before becoming a senior executive at the UK's largest heritage fund. Tom is an Ashoka Fellow, board member at ICIJ, and also co-directs a course at Harvard University.</p>
+                    <p class="mb-4">Tom is a nonprofit CEO turned grantmaker. He founded civic tech pioneers mySociety and developed data and technology policy for the UK government before becoming a senior executive at two of the UK’s largest institutional funders. Tom is an Ashoka Fellow, a board member at the International Consortium of International Journalists, and the co-founder of an open access education project run out of the Harvard Kennedy School.</p>
                 </div>
             </div>
 
@@ -629,55 +562,60 @@ When I first started I felt a bit lost at sea. Training provided was about the n
                 <div class="heading">
                     <span>Get Your Copy</span>
                     <h2>Pre-order now</h2>
-                    <p>Order an early copy of the book for delivery and be the first to read it.</p>
+                    <p class="lead">Order an early copy of the book and be the first to read it!</p>
                 </div>
             </div>
         </div>
 
-<div class="card-deck">
-  <div class="card">
-    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-    <div class="card-header">
-        <h3 class="card-title">Kindle e-book</h3>
-        <h5 class="card-subtitle mb-2 text-muted">$9.99 US / £9.99 UK</h5>
-    </div>
-    <div class="card-body">
-      <p class="card-text">Now available to pre-order for delivery in June 2021.</p>
-    </div>
-    <div class="card-footer text-center">
-        <a href="" class="btn btn-main">Pre-order now</a>
-    </div>
-  </div>
+        <div class="row">
 
-  <div class="card">
-    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-    <div class="card-header">
-        <h3 class="card-title">Hardback</h3>
-        <h5 class="card-subtitle mb-2 text-muted">$29.99 US / £24.99 UK</h5>
-    </div>
-    <div class="card-body">
-      <p class="card-text">Now available to pre-order for delivery in June 2021.</p>
-    </div>
-    <div class="card-footer text-center">
-        <a href="https://modern-grantmaking.myshopify.com/products/modern-grantmaking-hardback-edition" class="btn btn-main">Pre-order now</a>
-    </div>
-  </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="pricing-box mb-4 mb-lg-0">
+                    <div class="pricing-header">
+                        <p>Hardback</p>
+                        <h2>$34.00 / £22.99</h2>
+                    </div>
 
-    <div class="card">
-    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-    <div class="card-header">
-        <h3 class="card-title">Paperback</h3>
-        <h5 class="card-subtitle mb-2 text-muted">$19.99 US / £15.99 UK</h5>
-    </div>
-    <div class="card-body">
-        <p class="card-text"> Coming in late June 2021.</p>
-    </div>
-    <div class="card-footer text-center">
-        <a href="" class="btn btn-secondary">Coming soon</a>
-    </div>
-  </div>
+                    <ul class="list-unstyled">
+                        <li><i class="flaticon flaticon-check"></i>Pre-order for delivery in June</li>
+                    </ul>
+ 
+                    <a href="https://modern-grantmaking.myshopify.com/products/modern-grantmaking-hardback-edition" class="btn btn-main-2 mt-3">Pre-order now <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
 
-</div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="pricing-box mb-4 mb-lg-0">
+                    <div class="pricing-header">
+                        <p>Kindle e-Book</p>
+                        <h2>$9.99 / £9.99</h2>
+                    </div>
+
+                    <ul class="list-unstyled">
+                        <li><i class="flaticon flaticon-check"></i>Coming in June</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-secondary mt-3">Coming soon</a>
+                </div>
+            </div>
+
+
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="pricing-box mb-4 mb-lg-0">
+                    <div class="pricing-header">
+                        <p>Paperback</p>
+                        <h2>$19.99 / £15.99</h2>
+                    </div>
+
+                    <ul class="list-unstyled">
+                        <li><i class="flaticon flaticon-check"></i>Coming in June</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-secondary mt-3">Coming soon</a>
+                </div>
+            </div>
+        </div>
+        </div>
     </div>
 </section>
 
@@ -687,28 +625,22 @@ When I first started I felt a bit lost at sea. Training provided was about the n
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-8">
                 <div class="heading text-center">
-                    <span class="text-color">Get in touch</span>
-                    <h2>Services we offer</h2>
+                    <span class="text-color">Services we offer</span>
+                    <h2>Interested in Modern Grantmaking? We can help...</h2>
                 </div>
-<!--                     <p>We offer public speaking, workshops and training for grantmakers - see the full list of our services.</p>
-                    <p>hello@moderngrantmaking.com</p> -->
                 <div>
 
-                    <p>Ever since we started writing a book for professional grantmakers, people from funders have been asking us if we provide services related to it.</p>
+                    <p class="lead">To ask us about anything, please email <a href="mailto:hello@moderngrantmaking.com">hello@moderngrantmaking.com</a>.</p>
+ 
+                    <p class="lead">We can help you with:</p>
 
-                    <p>We offer the following services for funding organisations, whether you work for a private foundation, government funder, or corporate donor.</p>
-
-                    <ul>
-                    <li><strong>The Modern Grantmaking Workshop:</strong> A full or half day workshop founded on the five values that underpin Modern Grantmaking. Each workshop is tailored to help grantmakers to surface and agree perhaps under-appreciated priorities for change in their organisations.</li>
-                    <li><strong>Embedding Modern Grantmaking:</strong> A longer engagement in which we will work closely with your team to identify areas where your organisation is performing strongly on Modern Grantmaking values and practices, and where some improvements could make a real impact, especially for grantees and grantseekers.</li>
-                    <li><strong>Redesigning your funding offer:</strong> We will work with you to review your current funding offer from start to finish using Human-Centred Design tools and techniques. The purpose is to ensure that your funding is more accessible and that the quality of applications you get are higher, with fewer confused or irrelevant applications.</li>
-                    <li><strong>Bespoke consulting:</strong> Modern Grantmaking, the book, covers a wide array of topics and areas. We’re happy to work with you on anything within the book, and where necessary will point you to others who can help you more than we can.</li>
+                    <ul class="lead">
+                        <li><strong>Modern Grantmaking workshops:</strong> A full or half day grounded on the five values that underpin Modern Grantmaking. Each workshop can be tailored to your specific needs.
+                        <li><strong>Embedding Modern Grantmaking at your funder:</strong> Whether redesigning how you do grantmaking, redeveloping your strategy or overhauling your recruiting, Gemma and Tom are available to bring a Modern Grantmaking perspective and values to your reform.</li>
+                        <li><strong>Speaking at events:</strong> Gemma and Tom are available to talk about Modern Grantmaking as keynote speakers and on panels.
                     </ul>
 
-                    <p>We are also available to book for events as keynote speakers or panellists. </p>
-
-                    <p>If you’d like to talk to us about any of the services we provide we would be delighted to chat. Please drop us a line at <a href="mailto:hello@moderngrantmaking.com">hello@moderngrantmaking.com</a>.</p>
-
+                    <p class="lead">Our email again: <a href="mailto:hello@moderngrantmaking.com">hello@moderngrantmaking.com</a>.</p>
 
                 </div>
             </div>
@@ -772,9 +704,8 @@ When I first started I felt a bit lost at sea. Training provided was about the n
                     <ul class="list-unstyled">
                         <li><a href="#about">About</a></li>
                         <li><a href="#chapters">Chapters</a></li>
-                        <li><a href="#authors">Authors</a></li>
-                        <li><a href="#privacy" data-toggle="modal" data-target="#privacyModal">Privacy policy</a></li>
-                        <li><a href="#contact">Our services</a></li>
+                        <li><a href="#author">Authors</a></li>
+                        <li><a href="#services">How we can help</a></li>
                     </ul>
                 </div>
             </div>
@@ -783,6 +714,7 @@ When I first started I felt a bit lost at sea. Training provided was about the n
                     <div class="contact-item">
                         <h5 class="mb-2">Get in touch</h5>
                         <p><a style="color: #fff; opacity: .79;" href="mailto:hello@moderngrantmaking.com">hello@moderngrantmaking.com</a></p>
+                        <p><a style="color: #fff; opacity: .79;" href="#privacy" data-toggle="modal" data-target="#privacyModal">Privacy policy</a></p>
                     </div>
                 </div>
             </div>
