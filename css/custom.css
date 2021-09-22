@@ -1,0 +1,78 @@
+div.page-number {
+    text-align: right;
+}
+p.chapter-contents {
+    font-style: italic;
+    font-size: 0.9em;
+}
+.form-control:focus {
+    color: white;
+}
+.reviewer {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.reviewer-title {
+    float: right; width: calc(100% - 60px);
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.footer-widget ul li a, .footer-widget h5 {
+    text-transform: none !important;
+}
+.quote {
+    background-color: #4054B2;
+    overflow: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 50px;
+    text-align: left;
+}
+.quote p.lead {
+     color: rgba(255, 255, 255, 0.8);
+}
+.quote .carousel-caption {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.quote h5 {
+    color: lightgray;
+    opacity: 0.7;
+}
+.pricing-box {
+    padding: 50px;
+    background: rgba(0, 23, 62,.97);
+}
+.pricing-header p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+.pricing-header h2 {
+    font-size: 2em;
+    color: #fff;
+}
+.pricing-box ul {
+    margin-bottom: 30px;
+    border-top: 1px solid rgba(255,255,255,.2);
+    padding-top: 30px;
+    color: #fff;
+}
+.pricing-box ul li {
+    margin-bottom: 10px;
+}
+.bg-grey {
+    z-index: 0;
+}
+.about-img::before {
+  z-index: 1;
+}
+.about-img {
+  z-index: 2;
+}
