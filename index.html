@@ -47,11 +47,6 @@
 	  });
 	  return false;
 	}
-	var purchase_buttons = document.getElementsByClassName('purchase-button');
-	console.log(purchase_buttons);
-	for (var i = 0; i < purchase_buttons.length; i++) {
-	    purchase_buttons[i].addEventListener('click', gtag_report_conversion);
-	}
 </script>
 </head>
 
@@ -739,6 +734,13 @@ We may provide hyperlinks to third-party websites as a convenience to users of m
    
     <script src="js/contact.js"></script>
     <script src="js/theme.js"></script>
+    <script>
+	var purchase_links = document.getElementsByClassName('purchase-button');
+	purchase_links.forEach(function(link) {
+		link.addEventListener('click', gtag_report_conversion); 
+	});
+	console.log(purchase_links);
+     </script>
   </body>
   </html>
    
