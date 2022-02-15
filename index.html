@@ -34,8 +34,8 @@
 	gtag('config', 'AW-999146012');
 	    
 	// Event reporting for clicks
-	function gtag_report_conversion(url) {
-	   console.log(url);
+	function gtag_report_conversion() {
+	  console.log("hello, my url is", this.getAttribute("href"));
 	  var callback = function () {
 	    if (typeof(url) != 'undefined') {
 	      window.location = url;
@@ -48,6 +48,7 @@
 	  return false;
 	}
 	var purchase_buttons = document.getElementsByClassName('purchase-button');
+	console.log(purchase_buttons);
 	for (var i = 0; i < purchase_buttons.length; i++) {
 	    purchase_buttons[i].addEventListener('click', gtag_report_conversion);
 	}
