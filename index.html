@@ -31,8 +31,27 @@
 	gtag('js', new Date());
     
       	gtag('config', 'G-FNS6L0H0K2');
-    </script>
-
+	gtag('config', 'AW-999146012');
+	    
+	// Event reporting for clicks
+	function gtag_report_conversion(url) {
+	   console.log(url);
+	  var callback = function () {
+	    if (typeof(url) != 'undefined') {
+	      window.location = url;
+	    }
+	  };
+	  gtag('event', 'conversion', {
+	      'send_to': 'AW-999146012/-AeKCNqw5qEDEJyEt9wD',
+	      'event_callback': callback
+	  });
+	  return false;
+	}
+	var purchase_buttons = document.getElementsByClassName('purchase-button');
+	for (var i = 0; i < purchase_buttons.length; i++) {
+	    purchase_buttons[i].addEventListener('click', gtag_report_conversion);
+	}
+</script>
 </head>
 
 <body id="top-header">
@@ -501,7 +520,7 @@
                         <li>Now available&nbsp;</li>
                     </ul>
 
-                    <a href="https://www.amazon.co.uk/dp/B095SRQQN9" class="btn btn-main-2 mt-3">Buy now&nbsp;<i class="fa fa-angle-right"></i></a>
+                    <a href="https://www.amazon.co.uk/dp/B095SRQQN9" class="btn btn-main-2 mt-3 purchase-button">Buy now&nbsp;<i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
 
@@ -517,7 +536,7 @@
                         <li><i class="flaticon flaticon-check"></i></li>
                     </ul>
 
-                    <a href="https://www.amazon.co.uk/Modern-Grantmaking-Funders-Believe-Possible/dp/1838487905/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1624964046&sr=8-1" class="btn btn-main-2 mt-3">Buy now&nbsp;<i class="fa fa-angle-right"></i></a>
+                    <a href="https://www.amazon.co.uk/Modern-Grantmaking-Funders-Believe-Possible/dp/1838487905/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1624964046&sr=8-1" class="btn btn-main-2 mt-3 purchase-button">Buy now&nbsp;<i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
 
@@ -533,7 +552,7 @@
                         <li><i class="flaticon flaticon-check"></i>Free shipping to UK and US</li>
                     </ul>
  
-                    <a href="https://modern-grantmaking.myshopify.com/products/modern-grantmaking-hardback-edition" class="btn btn-main-2 mt-3">Buy now&nbsp;<i class="fa fa-angle-right"></i></a>
+                    <a href="https://modern-grantmaking.myshopify.com/products/modern-grantmaking-hardback-edition" class="btn btn-main-2 mt-3 purchase-button">Buy now&nbsp;<i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
 
