@@ -736,10 +736,12 @@ We may provide hyperlinks to third-party websites as a convenience to users of m
     <script src="js/theme.js"></script>
     <script>
 	var purchase_links = document.getElementsByClassName('purchase-button');
-	purchase_links.forEach(function(link) {
-		link.addEventListener('click', gtag_report_conversion); 
-	});
 	console.log(purchase_links);
+	Array.prototype.forEach.call(purchase_links, function(el) {
+        console.log(el.tagName);
+	    el.addEventListener('click', gtag_report_conversion); 
+	});
+	
      </script>
   </body>
   </html>
