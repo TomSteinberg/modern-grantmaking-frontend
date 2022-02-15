@@ -35,7 +35,7 @@
 	    
 	// Event reporting for clicks
 	function gtag_report_conversion() {
-	  console.log("hello, my url is", this.getAttribute("href"));
+	  var url = this.getAttribute("href");
 	  var callback = function () {
 	    if (typeof(url) != 'undefined') {
 	      window.location = url;
@@ -736,12 +736,9 @@ We may provide hyperlinks to third-party websites as a convenience to users of m
     <script src="js/theme.js"></script>
     <script>
 	var purchase_links = document.getElementsByClassName('purchase-button');
-	console.log(purchase_links);
 	Array.prototype.forEach.call(purchase_links, function(el) {
-        console.log(el.tagName);
 	    el.addEventListener('click', gtag_report_conversion); 
 	});
-	
      </script>
   </body>
   </html>
